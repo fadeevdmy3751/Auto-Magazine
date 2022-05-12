@@ -2,7 +2,7 @@
 
 Автомобильный журнал AUTO-MAGAZINE об электро-версии легендарного автобуса volkswagen T1
 
-<a href="https://fadeevdmy3751.github.io/Auto-magazine/" target="_blank">Проект на Github Pages</a>
+<a href="https://fadeevdmy3751.github.io/Auto-Magazine/" target="_blank">Проект на Github Pages</a>
 
 Основной макет сверстан на grid, что дало возможность гибко изменять взаимное расположение секций.
 Часть функционала реализована через js, например создание радиокнопок по числу статей, а также валидация формы обратной связи.
