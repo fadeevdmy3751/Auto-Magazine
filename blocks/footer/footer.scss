@@ -1,0 +1,35 @@
+﻿.footer {
+  box-sizing: border-box;
+  grid-area: ftr;
+  padding: 20px;
+  //min-height: 317px;
+  min-height: 429px;
+  display: grid;
+  grid-template-areas:
+    'head'
+    'subh'
+    'form'
+    'logo'
+    'cprt';
+
+  @media screen and (min-width: $maxMob) {
+    padding: 50px;
+    min-height: 317px;
+    grid-template-areas:
+    'head logo'
+    'subh .'
+    'form cprt';
+    grid-template-rows: repeat(3, max-content);
+
+  }
+
+  @media screen and (min-width: $maxTablet) {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    // костыль чтоб не делать кучу вложенных контейнеров
+    background-image: url("../../img/vert_line.svg");
+    background-position: center;
+    background-repeat: repeat-y;
+
+  }
+}

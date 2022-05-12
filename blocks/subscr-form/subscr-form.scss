@@ -1,0 +1,17 @@
+﻿.subscr-form {
+  grid-area: form;
+  box-sizing: border-box;
+  margin: 0;
+  width: 280px;
+  height: 64px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $maxMob) {
+    align-self: end;
+  }
+
+  @media screen and (min-width: $maxTablet) {
+    //@include rightLine();
+  }
+}

@@ -1,0 +1,12 @@
+﻿.intro__heading {
+  margin: 26px 0 30px;
+  font-weight: normal;
+  text-align: center;
+  font-size: 38px;
+  line-height: 50px;
+  @media screen and (min-width: $maxMob) {
+    font-size: 65px;
+    line-height: 73px;
+    margin: 30px 0 51px;
+  }
+}

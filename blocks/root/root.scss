@@ -1,0 +1,52 @@
+$bgcolor: #191D2C;
+$maincolor: #E1FD2C;
+
+$maxMob: 628px;
+$maxTablet: 1000px;
+
+
+@mixin styling($map) {
+    background: map-get($map, 'foo');
+    font-size: map-get($map, 'bar');
+}
+
+@media screen and (min-width: $maxMob) {
+
+}
+
+@media screen and (min-width: $maxTablet) {
+
+}
+//@media screen and (min-width: $maxMob) {
+//  @include styling(  (
+//    foo: green,
+//    bar: 50px
+//  ));
+//}
+//
+//@media screen and (min-width: $maxTablet) {
+//  @include styling((
+//    foo: red,
+//    bar: 100px
+//  ));
+//}
+
+// @include bottomLine();
+@mixin bottomLine() {
+  border-bottom: solid 1px $maincolor;
+}
+
+
+// @include rightLine();
+@mixin rightLine() {
+  border-right: solid 1px $maincolor;
+}
+
+// @include btnHover()
+@mixin btnHover() {
+  &:hover {
+    color: $bgcolor;
+    background-color: $maincolor;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,12 @@
+﻿.press {
+  grid-area: prs;
+  box-sizing: border-box;
+  padding: 20px;
+  @include bottomLine();
+  position: relative;
+  min-height: 287px;
+  @media screen and (min-width: $maxMob) {
+    min-height: 500px;
+    padding: 50px;
+  }
+}

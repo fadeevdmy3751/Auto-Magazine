@@ -1,0 +1,26 @@
+﻿.intro {
+  grid-area: int;
+  padding: 60px 20px;// 60px;
+  @include bottomLine();
+  text-align: center;
+
+  @media screen and (min-width: $maxMob) {
+    padding: 100px 34px;
+  }
+
+  @media screen and (min-width: $maxTablet) {
+    padding: 0 50% 0 0;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    min-height: 675px;
+    max-height: 835px;
+    // высота абсолютно спозиционированной резиновой картинки + отступы
+    height: calc((100vw - 17px)/2/4*3 + 300px)
+      //min(835px, calc((100vw - 17px)/2/4*3 + 300px));
+  }
+}

@@ -1,0 +1,115 @@
+<!doctype html>
+<html class="root" lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta content="Автомобильный журнал AUTO-MAGAZINE об электро-версии volkswagen T1. \
+    Разработано с использованием препроцессора scss, его автоматического компилятора на node.js для webstorm \
+    доработанного для scss автоматического генератора БЭМ-файловой структуры https://githubhelp.com/Nikolay-Shirokov/BEM-Nested-CSS \
+    с использованием подхода Mobile first" name="description">
+  <meta content="volkswagen T1 электромобиль" name="keywords">
+  <meta content="Дмитрий Фадеев" name="author">
+  <title>AUTO-MAGAZINE</title>
+  <link rel="stylesheet" href="vendor/vendor.css">
+  <link rel="stylesheet" href="pages/index.css">
+  <!--MOBILE FIRST-->
+</head>
+<body class="page">
+<header class="header">
+  <nav class="menu menu_hidden">
+    <ul class="menu_list">
+      <li><a href="#" class="menu__item link">Факты</a></li>
+      <li><a href="#" class="menu__item link">ГАЛЕРЕЯ</a></li>
+      <li><a href="#" class="menu__item link">ПРЕССА</a></li>
+    </ul>
+  </nav>
+  <img class="header__logo" src="img/AUTO-MAGAZINE.svg" alt="AUTO-MAGAZINE logo">
+  <div class="header__burger link"><span></span><span></span><span></span><span></span></div>
+</header>
+<section class="intro">
+  <p class="intro__text">volkswagen T1</p>
+  <h1 class="intro__heading">Новая версия популярного микроавтобуса</h1>
+  <p class="intro__text">С ЭЛЕКТРО ДВИГАТЕЛЕМ</p>
+  <img src="img/bus.png" class="intro__img" alt="старый автобус">
+  <button type="button" class="intro__button">Подробнее</button>
+</section>
+<section class="description" aria-label="описание">
+  <article class="description__text" aria-label="описание"><strong>VW&nbsp;T1&nbsp;Electro:</strong> Отделение Volkswagen Commercial Vehicles
+    представило концепт e&#8209;Bulli: классический вэн T1 1966 года с&nbsp;электрической силовой установкой. По&nbsp;словам
+    производителя, проект получит коммерческое продолжение, и&nbsp;через фирму-партнера eClassics наборы для конверсии
+    микроавтобусов в&nbsp;электрокары и&nbsp;уже готовые машины будут продавать частным клиентам.
+  </article>
+</section>
+<section class="plus-minus plus-minus__plus">
+  <h2 class="plus-minus__heading">плюсы</h2>
+  <ul class="plus-minus__list">
+    <li>+ Экологичный</li>
+    <li>+ Экономный</li>
+    <li>+ Тихий</li>
+  </ul>
+</section>
+<section class="plus-minus">
+  <h2 class="plus-minus__heading">МИНУСЫ</h2>
+  <ul class="plus-minus__list">
+    <li>- Дорогой</li>
+    <li>- Подзарядка</li>
+  </ul>
+</section>
+<section class="gallery">
+  <img class="gallery__image" src="img/b1.png" alt="автобус">
+  <img class="gallery__image" src="img/b2.png" alt="кабина">
+  <img class="gallery__image" src="img/b3.png" alt="салон">
+  <h2 class="gallery__heading">Галерея</h2>
+  <button type="button" class="gallery__button link"></button>
+  <button type="button" class="gallery__button link"></button>
+</section>
+<div class="stub"></div>
+<div class="press-title">
+  <h2>Пресса</h2>
+</div>
+<section class="press" aria-label="пресса">
+  <article class="press__article" aria-label="Engadget"
+           data-link="https://www.engadget.com/2020-03-20-vw-unveils-e-bulli-t1-electric-conversion.html">
+    <strong>Engadget:</strong> VW’s e-BULLI concept shows how your classic van can become an EV.
+  </article>
+  <article class="press__article" aria-label="Drive.ru" data-link="https://www.drive.ru/news/volkswagen/5e7447bdec05c4b251000010.html">
+    <strong>Drive.ru:</strong> Вэн Volkswagen e-Bulli скрестил классику с современной техникой.
+  </article>
+  <article class="press__article" aria-label="theDRIVE"
+           data-link="https://www.thedrive.com/tech/32735/the-volkswagen-e-bulli-concept-shows-how-you-can-electrify-the-iconic-bus-for-70000">
+    <strong>theDRIVE:</strong> The Volkswagen E-Bulli Concept Shows How You Can Electrify the Iconic Bus for $70,000
+  </article>
+  <a class="press__button" href="#" target="_blank">Читать</a>
+  <nav class="press__nav">
+    <!--    <input type="radio" class="press__radio" name="press-radio" id="r1" value="0" onchange="updatePress()">-->
+    <!--    <label for="r1"></label>-->
+  </nav>
+</section>
+<footer class="footer">
+  <h2 class="footer__heading">Подписка</h2>
+  <p class="footer__subheading">На новые спецвыпуски машин.</p>
+  <form class="subscr-form">
+    <input name="name" placeholder="Имя" required type="text" class="subscr-form__input subscr-form__input_type_name"
+           oninput="checkForm()">
+    <input name="surname" placeholder="Фамилия" required type="text"
+           class="subscr-form__input subscr-form__input_type_surname" oninput="checkForm()">
+    <input name="email" placeholder="Почта" required type="email"
+           class="subscr-form__input subscr-form__input_type_email" oninput="checkForm()">
+    <button type="submit" class="subscr-form__input subscr-form__submit" onclick="subscript(event)">подписка</button>
+  </form>
+  <img class="footer__logo" src="img/AUTO-MAGAZINE.svg" alt="AUTO-MAGAZINE logo">
+  <p class="footer__copyright" property="dc:rights">&copy;
+    <span property="dc:publisher">Auto-Magazine</span>
+    <span property="dc:dateCopyrighted">2021</span>
+  </p>
+</footer>
+<template id="template">
+  <div id="press__radio-template">
+    <input type="radio" class="press__radio" name="press-radio" onchange="updatePress()" id="r-" value="">
+    <label for="r-" class="link"></label>
+  </div>
+</template>
+<script src="js/main.js"></script>
+</body>
+</html>

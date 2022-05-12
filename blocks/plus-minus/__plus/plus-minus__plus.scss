@@ -1,0 +1,13 @@
+﻿.plus-minus__plus {
+    @media screen and (min-width: $maxMob) {
+    @include rightLine();
+    grid-area: pls;
+
+  }
+
+  & + .plus-minus{ //minus
+    @media screen and (min-width: $maxMob) {
+      grid-area: mns;
+    }
+  }
+}

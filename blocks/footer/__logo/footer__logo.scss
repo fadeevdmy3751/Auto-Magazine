@@ -1,0 +1,15 @@
+﻿.footer__logo {
+  grid-area: logo;
+  width: 280px;
+  height: 58px;
+  margin: 120px 0 20px;
+
+  @media screen and (min-width: $maxMob) {
+    margin: 0;
+    width: 184px;
+    height: 38px;
+    align-self: start;
+    justify-self: right;
+  }
+
+}

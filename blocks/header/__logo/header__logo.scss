@@ -1,0 +1,15 @@
+﻿.header__logo {
+  width: 100px;
+  height: 20px;
+  @media screen and (min-width: $maxMob) {
+      width: 184px;
+      height: 38px;
+  }
+}
+
+
+//.header__logo {
+//  width: 184px;
+//  height: 38px;
+//  viewBox: 0 0 184 38;
+//}

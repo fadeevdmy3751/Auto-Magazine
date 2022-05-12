@@ -1,0 +1,10 @@
+﻿.menu_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 16px;
+  @media screen and (min-width: $maxMob) {
+    gap: 20px;
+  }
+}

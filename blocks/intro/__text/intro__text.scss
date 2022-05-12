@@ -1,0 +1,12 @@
+﻿.intro__text {
+  margin: 0;
+  font-size: 11px;
+  line-height: 14px;
+  /* identical to box height, or 147% */
+  text-align: center;
+  text-transform: uppercase;
+  @media screen and (min-width: $maxMob) {
+    font-size: 19px;
+    line-height: 28px;
+  }
+}

@@ -1,0 +1,9 @@
+﻿.plus-minus {
+  padding: 20px;
+  @include bottomLine();
+  @media screen and (min-width: $maxMob) {
+    box-sizing: border-box;
+    min-height: 505px;
+    padding: 40px 50px;
+  }
+}

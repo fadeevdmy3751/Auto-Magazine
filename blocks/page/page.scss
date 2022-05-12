@@ -1,0 +1,54 @@
+﻿.page {
+  background-color: $bgcolor;
+  color: $maincolor;
+  min-width: 320px;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  @media screen and (min-width: $maxMob) {
+    display: grid;
+    grid-template-areas:
+      'hdr hdr'
+      'int int'
+      'des des'
+      'pls mns'
+      'gal gal'
+      'prs prs'
+      'ftr ftr';
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (min-width: $maxTablet) {
+
+    grid-template-areas:
+      'hdr hdr hdr'
+      'int int int'
+      'des pls mns'
+      'gal stub stub'
+      'prt prs prs'
+      'ftr ftr ftr';
+    grid-template-columns: 2fr 1fr 1fr;
+
+    //grid-template-rows: repeat(6,  fit-content(100%));
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

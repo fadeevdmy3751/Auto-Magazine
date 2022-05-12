@@ -1,0 +1,24 @@
+﻿.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 20px;
+  height: 70px;
+  width: 75vw;  //??? todo check max dim
+  display: flex;
+  align-items: center;
+  background: $bgcolor;
+  visibility: visible;
+  opacity: 1;
+  transition: all .3s ease;
+
+  @media screen and (min-width: $maxMob) {
+    padding-left: 34px;
+  }
+
+  @media screen and (min-width: $maxTablet) {
+    padding-left: 50px;
+    width: auto;
+  }
+
+}

@@ -1,0 +1,10 @@
+﻿.description__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 27px;
+
+  @media screen and (min-width: $maxTablet) {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}

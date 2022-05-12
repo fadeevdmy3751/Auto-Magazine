@@ -1,0 +1,10 @@
+﻿.menu__item {
+  font-size: 11px;
+  line-height: 16px;
+  /* identical to box height, or 145% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  @media screen and (min-width: $maxMob) {
+    font-size: 12px;
+  }
+}

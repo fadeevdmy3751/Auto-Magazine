@@ -1,0 +1,15 @@
+﻿.footer__copyright {
+  grid-area: cprt;
+  margin: 0;
+  font-size: 13px;
+  line-height: 13px;
+  letter-spacing: 1px;
+
+  @media screen and (min-width: $maxMob) {
+    align-self: end;
+    justify-self: right;
+  }
+
+
+  //@media
+}

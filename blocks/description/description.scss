@@ -1,0 +1,9 @@
+﻿.description {
+  padding: 18px 20px;
+  @include bottomLine();
+  grid-area: des;
+  @media screen and (min-width: $maxTablet) {
+    padding: 40px 50px 45px;
+    @include rightLine();
+  }
+}

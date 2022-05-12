@@ -1,0 +1,22 @@
+/*@font-face {*/
+/*  font-family: 'Source Sans Pro';*/
+/*  font-style: normal;*/
+/*  font-weight: 400;*/
+/*  src: url("SourceSansPro-Regular.ttf") format("ttf");*/
+/*}*/
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url("sourcesanspro.woff") format("woff2"),
+  url("sourcesanspro.woff2") format("woff");
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url("sourcesansprolight.woff2") format("woff2"),
+  url("sourcesansprolight.woff") format("woff");
+}
