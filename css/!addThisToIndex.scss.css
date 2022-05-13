@@ -1,0 +1,5 @@
+@import url(../vendor/normalize.css);
+@import url(../css/fonts.css);
+@import '../css/root';
+
+/*добавить это в начало index.scss после запуска автобэма ибо он это поидее похерит*/
