@@ -3,8 +3,8 @@
   top: 0;
   left: 0;
   padding-left: 20px;
-  height: 70px;
-  width: 75vw;  //??? todo check max dim
+  min-height: 70px;
+  width: 75vw;
   display: flex;
   align-items: center;
   background: $bgcolor;

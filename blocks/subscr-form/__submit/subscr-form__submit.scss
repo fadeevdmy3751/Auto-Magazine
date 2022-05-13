@@ -2,4 +2,10 @@
   background-color: $maincolor;
   color: $bgcolor;
   width: 80px;
+
+  cursor: pointer;
+  transition: opacity;
+  &:hover{
+    opacity: .8; // как и просили в ревью, но вообще там в макете слева нарисоано что при наведении она остается точно такой как и без наведения
+  }
 }
