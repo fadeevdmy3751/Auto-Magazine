@@ -9,14 +9,14 @@
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 400;
-  src: url("sourcesanspro.woff") format("woff2"),
-  url("sourcesanspro.woff2") format("woff");
+  src: url("../vendor/fonts/sourcesanspro.woff") format("woff2"),
+  url("../vendor/fonts/sourcesanspro.woff2") format("woff");
 }
 
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 300;
-  src: url("sourcesansprolight.woff2") format("woff2"),
-  url("sourcesansprolight.woff") format("woff");
+  src: url("../vendor/fonts/sourcesansprolight.woff2") format("woff2"),
+  url("../vendor/fonts/sourcesansprolight.woff") format("woff");
 }

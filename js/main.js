@@ -36,6 +36,7 @@ pressArticles.forEach((el, num) => {
   newInput.value = num
   if (num == 0) newInput.checked = true
   newLabel.htmlFor = newInput.id
+  newInput.addEventListener('change', () => updatePress())
   pressNav.append(newInput, newLabel)
 })
 
@@ -74,3 +75,9 @@ function subscript(e) {
     alert('Вы подписаны!');
   }
 }
+
+// навешивание обработчиков убранных из html
+const formFields = document.querySelector('.subscr-form').querySelectorAll('input')
+formFields.forEach(el => el.addEventListener('input',checkForm))
+const submitBtn = document.querySelector('.subscr-form').querySelector('.subscr-form__submit')
+submitBtn.addEventListener('click', e => subscript(e))

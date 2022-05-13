@@ -1,13 +1,15 @@
-﻿@import '../blocks/root/root.scss';
+﻿@import url(../vendor/normalize.css);
+@import url(../css/fonts.css);
+@import '../css/root';
 @import '../blocks/page/page.scss';
 @import '../blocks/header/header.scss';
-@import '../blocks/header/__logo/header__logo.scss';
-@import '../blocks/header/__burger/header__burger.scss';
-@import '../blocks/link/link.scss';
 @import '../blocks/menu/menu.scss';
 @import '../blocks/menu/_hidden/menu_hidden.scss';
-@import '../blocks/menu/_list/menu_list.scss';
+@import '../blocks/menu/__list/menu__list.scss';
 @import '../blocks/menu/__item/menu__item.scss';
+@import '../blocks/link/link.scss';
+@import '../blocks/header/__logo/header__logo.scss';
+@import '../blocks/header/__burger/header__burger.scss';
 @import '../blocks/intro/intro.scss';
 @import '../blocks/intro/__text/intro__text.scss';
 @import '../blocks/intro/__heading/intro__heading.scss';
@@ -15,10 +17,12 @@
 @import '../blocks/intro/__button/intro__button.scss';
 @import '../blocks/description/description.scss';
 @import '../blocks/description/__text/description__text.scss';
+@import '../blocks/article-start/article-start.scss';
 @import '../blocks/plus-minus/plus-minus.scss';
-@import '../blocks/plus-minus/__plus/plus-minus__plus.scss';
+@import '../blocks/plus-minus/_plus/plus-minus_plus.scss';
 @import '../blocks/plus-minus/__heading/plus-minus__heading.scss';
 @import '../blocks/plus-minus/__list/plus-minus__list.scss';
+@import '../blocks/plus-minus/_minus/plus-minus_minus.scss';
 @import '../blocks/gallery/gallery.scss';
 @import '../blocks/gallery/__image/gallery__image.scss';
 @import '../blocks/gallery/__heading/gallery__heading.scss';
@@ -41,6 +45,3 @@
 @import '../blocks/subscr-form/__submit/subscr-form__submit.scss';
 @import '../blocks/footer/__logo/footer__logo.scss';
 @import '../blocks/footer/__copyright/footer__copyright.scss';
-
-
-
