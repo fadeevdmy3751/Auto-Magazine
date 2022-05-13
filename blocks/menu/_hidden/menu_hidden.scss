@@ -1,9 +1,0 @@
-﻿.menu_hidden {
-  visibility: hidden;
-  opacity: 0;
-
-  @media screen and (min-width: $maxTablet) {
-    visibility: visible;
-    opacity: 1;
-  }
-}

@@ -1,9 +1,0 @@
-﻿.stub {
-  display: none;
-  @include bottomLine();
-  grid-area: stub;
-
-  @media screen and (min-width: $maxTablet) {
-    display: block;
-  }
-}
