@@ -11,3 +11,5 @@
 При создании применялись HTML5 и CSS, JS, флексбокс и grid-вёрстка на основе макета в Figma.
 Разработано с использованием препроцессора scss, его автоматического компилятора на node.js для webstorm,
 доработанного для scss автоматического генератора БЭМ-файловой структуры https://githubhelp.com/Nikolay-Shirokov/BEM-Nested-CSS
+
+ready to release
